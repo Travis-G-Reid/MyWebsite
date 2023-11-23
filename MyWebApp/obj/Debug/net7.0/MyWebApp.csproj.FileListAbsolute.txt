@@ -1,9 +1,9 @@
 X:\MyWebsite\MyWebApp\bin\Debug\net7.0\appsettings.Development.json
 X:\MyWebsite\MyWebApp\bin\Debug\net7.0\appsettings.json
+X:\MyWebsite\MyWebApp\bin\Debug\net7.0\MyWebApp.runtimeconfig.json
 X:\MyWebsite\MyWebApp\bin\Debug\net7.0\MyWebApp.staticwebassets.runtime.json
 X:\MyWebsite\MyWebApp\bin\Debug\net7.0\MyWebApp.exe
 X:\MyWebsite\MyWebApp\bin\Debug\net7.0\MyWebApp.deps.json
-X:\MyWebsite\MyWebApp\bin\Debug\net7.0\MyWebApp.runtimeconfig.json
 X:\MyWebsite\MyWebApp\bin\Debug\net7.0\MyWebApp.dll
 X:\MyWebsite\MyWebApp\bin\Debug\net7.0\MyWebApp.pdb
 X:\MyWebsite\MyWebApp\obj\Debug\net7.0\MyWebApp.GeneratedMSBuildEditorConfig.editorconfig

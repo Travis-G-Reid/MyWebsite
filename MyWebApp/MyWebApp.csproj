@@ -7,6 +7,10 @@
     <UserSecretsId>c074ec70-2705-46f8-bda1-38ecb656bb28</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>.</DockerfileContext>
+
+	  <!-- This line is required to prevent publishing from throwing erroneous duplicate file
+	  error while building file in local directory before sending to output destination -->
+    <ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>  
   </PropertyGroup>
 
   <ItemGroup>
