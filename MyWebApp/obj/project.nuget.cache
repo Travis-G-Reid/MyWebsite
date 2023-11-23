@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "K2lf5HYCED0B4tSEtJ21FXFq3LUolP7CRITbx+lUdBx5QKXkXICYkwvhTynF19Gq58z1H1KamG0mltH/i05V6g==",
+  "success": true,
+  "projectFilePath": "X:\\MyWebsite\\MyWebApp\\MyWebApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Travi\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512"
+  ],
+  "logs": []
+}
