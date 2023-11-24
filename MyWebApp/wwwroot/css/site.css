@@ -1,6 +1,7 @@
 body {
     background-image: url('https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif');
     background-size: cover;
+    background-repeat: repeat;
     height: 100vh;
     padding: 0;
     margin: 0;
