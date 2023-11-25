@@ -1,6 +1,6 @@
-body {
+html {
     background-image: url('https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif');
-    background-size: cover;
+    background-size: auto;
     background-repeat: repeat;
     height: 100vh;
     padding: 0;
@@ -8,4 +8,8 @@ body {
     color: white;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: inherit;
 }
