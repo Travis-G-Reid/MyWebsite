@@ -4,18 +4,18 @@
 }
 
 .blog-header {
-    margin-left: 1.875em;
-    margin-right: 1.875em;
+    margin-left: 2.875em;
+    margin-right: 2.875em;
     margin-bottom: 3em;
     padding-top: 2.375em;
-    text-align: left;
+    text-align: center;
     font-size: 2.5em;
 }
 
 .blog-text {
     text-indent: 1.5em;
-    margin-left: 3.5em;
-    margin-right: 3.5em;
+    margin-left: 4.5em;
+    margin-right: 4.5em;
     margin-top: 1.75em;
     text-align: justify;
     font-size: 1.25em;
@@ -24,8 +24,8 @@
 #blog-master-container {
     display: flex;
     flex-direction: column-reverse;
-    margin-left: 13.625em;
-    margin-right: 13.625em;
+    margin-left: 10.625em;
+    margin-right: 10.625em;
     min-width: 40em;
     /*
     outline: solid;
@@ -38,7 +38,8 @@
 .blog-singleton-container {
     padding-bottom: 2.1875em;
     display: flex-column;
-    background-color: rgba(255, 255, 255, 0.02)
+    background-color: rgba(255, 255, 255, 0.02);
+    padding: 1em
 }
 
 .blog-post-signoff {
