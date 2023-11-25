@@ -5,15 +5,15 @@
 }
 <head>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=0.66" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="~/css/blog.css">
 </head>
 <html>
 <body>
-	<div style="margin-bottom: 100px;">
+	<div style="margin-bottom: 6.25em;">
 		<a href="index"> Go home </a>
 	</div>
-	<div class="blog-master-container">
+	<div id="blog-master-container">
 		<div class="blog-singleton-container">
 			<p class="blog-header">This is a sample blog header</p>
 
@@ -66,6 +66,106 @@
 				Sample text bla bla bla Sample text bla bla bla Sample text bla bla bla
 				Sample text bla bla bla Sample text bla bla bla Sample text bla bla bla
 				Sample text bla bla bla Sample text bla bla bla Sample text bla bla bla
+			</p>
+
+			<p class="blog-post-signoff">
+				Written by Travis Reid on October 24, 2023
+			</p>
+		</div>
+
+		<div class="blog-singleton-container">
+			<p class="blog-header">The Necessity of Sky-High Abstraction of Modern Programming</p>
+			
+			<p class="blog-text">
+				Programming has evolved significantly over the years and has demanded an increasingly
+				higher level of abstraction, much of which has been loathed primarily by established
+				developers in the software community. Despite this, the necessity to program at higher levels
+				of abstractions has become an undeniable necessity.
+			</p>
+
+			<p class="blog-text">
+				The substantial increase in development speed and maintainability of higher-level languages
+				is the most important benefit that has obligated developers to opt for these higher-level languages.
+				The speed of execution of the program has rarely been a bottleneck except in particularly data-intensive
+				applications, but most higher-level languages can perform data-intensive operations using lower-level
+				languages, and the developer can continue using the higher-level language for rapid development. This,
+				in theory, and occasionally in practice, results in rapid development coupled with generally sufficient
+				execution speed.
+			</p>
+
+			<p class="blog-text">
+				What so many hardcore proponents of lower-level languages in modern development often neglect is the
+				necessity to use the tool that is sufficient for the job -- not necessarily the one that is exceptional --
+				and <i>then</i> choose the tool that can accomplish the job consistently in the shortest amount of time. For
+				trivial applications, the difference between 0.01 and 0.0001 seconds is often negligible, and let's not forget
+				about the libraries included in higher-level languages that often handle these performance bottlenecks with
+				relative ease.
+			</p>
+
+			<p class="blog-text">
+				Developers must remember that code is intended to serve a purpose that is not self-fulfilling. Code is not meant
+				to exist to satisfy the philosophy of its own language, but to suit an organizational need as it relates to extensibility,
+				maintainability, performance, and offered features/functionality. Because of this, it is difficult to make the argument
+				that loosely-typed languages like JavaScript and Python are "bad" beacuse they lack static typing. Such general statements
+				without specification lack nuance. So, let us specify: JavaScript and Python are bad in very large applications where maintainability
+				and extensibility of the application to an enterprise-level size would indeed be "bad", but the very same lack of static typing
+				can assist in rapid prototyping as implicit type coercions, often somewhat likened to digital blasphemy, reduce development overhead
+				and offer increased functionality at the cost of type safety and performance, both of which can be remdied by simply creating a more
+				robust program.
+			</p>
+
+			<p class="blog-text">
+				In general, there are very few applications that require low-level programming in modern development, and for those that do require this
+				level of development, there are even fewer that cannot use designated libraries for efficient data processing. Given the need to develop
+				a product, not champion a language for any particular purpose, must be respected. Languages are tools, not philosophies, but their formation
+				is often guided by philosophies. However, after the tool has been created, the only thing that matters is how it can benefit you, and that
+				does <i>not</i> include bragging rights, negligible differencies in efficiency where unneeded, and "pure" programming.
+			</p>
+
+			<p class="blog-text">
+				It must be said that there is immense value in learning a lower-level programming language like C because of the skills it teaches you. Namely,
+				how a computer handles memory is something abstracted away from almost all higher-level languages. However, besides a learning tool, these lower-
+				level languages should only be used when necessary for performance and functionality. Cases like HFT firms, video game development, physics engine
+				creation, data-intensive processing applications, and similar uses are, without a doubt, best-suited to be written in a language lik C, C++, or Rust.
+				However, the fact remains that if the goal is to develop a working product, then the first language that comes to mind should <b><i>NOT</i></b> be C.
+				Philosophical allegiance to programming languages has led to needlessly dogmatic opinions on the topic when pragmatic considerations
+				ought to be made in place of subjective ones.
+			</p>
+
+			<p class="blog-text">
+				There should not be a situation where someone ponders whether to use Rust or Python for the same application. If machine-level control is required, then
+				the decision should not require much thought. If development speed is the utmost priority and can be achieved in Python without mangling maintainability,
+				then again, the choice should be obvious. The goal is to deliver a product, and while lower-level language excel in exerting incredibly close control over
+				the machine as well as in producing portable code, the need to "excel" is rarely present, and most often, the biggest business need is a functioning product,
+				not one that is optimized beyond a reasonable need.
+			</p>
+
+			<p class="blog-text">
+				I would be remiss to not mention the fact that there may still exist blurred lines in selecting the right tool for the job since situations are rarely
+				black-and-white. Additionally, just because a task does not require C++ or Rust does not mean that it should not utilize it. Returning to a focus on
+				obtaining a pragmatic perpsective, the familiarity of a programmer with languages, as well as the robustness of the language's ecosystem, as well as the
+				existing components that interact with a given system also influence the decision. For example, rapid development of a program that requires system-level
+				control might present a more nuanced situation, and this is fair to concede. However, it still returns to the following point: Using the right tool for the
+				job irrespective of the connotations and philosophies of the language.
+				
+				</p>
+				<p class="blog-text">
+				If you are familiar with C++ and unfamiliar with Python, then it does not make sense to
+				use Python for a task which might theoretically provide a marginal boost in productivity. Just as one should not choose C++ for a task in order to provide a
+				negligible boost in performance, the same can be said for choosing a higher-level language to achieve negligible boost in development speed. However again, Python,
+				Go, and other high-level languages are known to be especially quick to develop, and 'Go' specifically offers a blend of system-level control, execution speed, and
+				development speed. The decision to use the proper tool for the job should not be chosen purely based on speed of development either, but in essence, should prioritize
+				delivering a functioning product with the least resistance possible.
+			</p>
+			<br />
+			<p class="blog-text" style="text-align: center;">
+				Choose the right tool for the job.
+			</p>
+			<p class="blog-text" style="text-align: center;">
+				Good enough is perfect.
+			</p>
+			<p class="blog-post-signoff">
+				Written by Travis Reid on October 24, 2023
 			</p>
 		</div>
 	</div>
