@@ -1,11 +1,16 @@
 ﻿.form-class {
     color:white;
+    width: 6.25em;
+    text-align: center;
 }
 
 .registration-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 200px; /* This seems like nonsensically functionally relevant */
+    width: 12.5em; /* This seems like nonsensically functionally relevant */
     margin: auto;
+}
+
+.register-button {
 }
