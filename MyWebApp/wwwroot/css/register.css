@@ -1,0 +1,11 @@
+﻿.form-class {
+    color:white;
+}
+
+.registration-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px; /* This seems like nonsensically functionally relevant */
+    margin: auto;
+}
