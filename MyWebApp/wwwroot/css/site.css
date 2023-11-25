@@ -1,7 +1,6 @@
 html {
     background-image: url('https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif');
-    background-size: auto;
-    background-repeat: repeat;
+    background-size: cover;
     height: 100vh;
     padding: 0;
     margin: 0;
@@ -11,5 +10,10 @@ html {
 }
 
 body {
+    background-size: cover;
     background-image: inherit;
+}
+
+h1 {
+    color: white;
 }
