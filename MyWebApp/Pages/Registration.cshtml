@@ -1,0 +1,44 @@
+﻿@page
+@model MyWebApp.Pages.RegistrationModel
+@{
+	ViewData["Title"] = "Registration";
+}
+<html style="zoom: 1.75; height: 100%; overflow: hidden;">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div style="margin-top: 10em;">
+        <a href="Index" style="font-size: 4em;">Return to home</a>
+	    <p style="font-size: 2.5em; color: white;"> Register here! </p>
+        <p style="font-size: 1.5em; color: gray;">[ Work in progress ]</p>
+    </div>
+
+    <div class="registration-container">
+
+	    <form method="post" action="Register">
+            <div>
+                <label for="username" class="form-class">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+        <br />
+            <div>
+                <label for="password" class="form-class">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+        <br />
+            <div>
+                <label for="email" class="form-class">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        <br />
+        <input class="register-button" type="submit" value="Register">
+
+        </form>
+    </div>
+</body>
+
+</html>
