@@ -1,23 +1,47 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using MyWebApp.Models;
 
 namespace MyWebApp.Controllers
 {
 	public class RegistrationController : Controller
 	{
-		// GET: /Account/Register
-		public IActionResult Index()
+		private readonly ILogger<RegistrationController> _logger;
+		public RegistrationController(ILogger<RegistrationController> logger)
 		{
-			return View();
+			_logger = logger;
 		}
 
-		// POST: /Account/Register
+		// GET:
+		[HttpGet]
+		public IActionResult Register()
+		{
+			return View(new RegisterModel());
+		}
+
+		// POST:
 		[HttpPost]
-		public IActionResult Register(string username, string password, string email)
+		public IActionResult Register(RegisterModel model)
 		{
-			// Your registration logic here
+			if (ModelState.IsValid)
+			{
+				var hasher = new PasswordHasher<RegisterModel>();
+				var hashedPassword = hasher.HashPassword(model, model.Password);
 
-			// After successful registration
-			return RedirectToAction("Index", "Home");
-		}
+				var user = new User
+				{
+					Username = model.Username,
+					Email = model.Email,
+					PasswordHash = hashedPassword
+				};
+				_logger.LogInformation($"New user: {System.Text.Json.JsonSerializer.Serialize(user)}");
+				return RedirectToAction("Index", "Home");
+			}
+			else
+			{
+				_logger.LogInformation("Model invalid: Registration failed.");
+				return View(model);
+			}
+		  }
 	}
 }
