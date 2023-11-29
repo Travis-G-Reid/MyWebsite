@@ -1,2 +1,22 @@
 ﻿body {
+    font-size: 1em;
+}
+
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td {
+    width: 30em;
+    height: 30em;
+    text-align: center;
+    vertical-align: middle;
+    border-block-start-color:aliceblue;
+    border-block-style:solid;
+}
+
+
+.blog-header {
+    font-size: 10em
 }
