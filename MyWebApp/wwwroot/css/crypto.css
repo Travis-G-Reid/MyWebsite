@@ -1,0 +1,16 @@
+﻿body {
+    color: white;
+}
+
+.challenge {
+    padding-top: 1em;
+    margin-top: 2em;
+}
+
+.text-to-decrypt {
+    font-size: 2em;
+    color: white;
+    margin: 2em;
+    outline-style: groove;
+    outline-color: gray;
+}
