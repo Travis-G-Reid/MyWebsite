@@ -1,0 +1,161 @@
+﻿@page
+@model SearchModel
+@{
+    ViewData["Title"] = "Search";
+}
+
+<head>
+    <style>
+    .filter {
+        margin-bottom: 20px;
+    }
+
+    .filter h3 {
+        font-size: 1.2em;
+        color: navy;
+    }
+
+    .filter ul {
+        list-style-type: none; /* Remove bullet points */
+        padding-left: 0;
+    }
+
+    .filter ul li {
+        padding: 5px 0;
+    }
+
+    .main-filter-checkbox {
+        margin-left: 15px; /* Adjust the margin for main filter checkboxes */
+        vertical-align: middle; /* Align vertically */
+    }
+
+    .sub-filter-checkbox {
+        margin-left: 15px; /* Adjust the margin for sub-filter checkboxes */
+        vertical-align: middle; /* Align vertically */
+    }
+
+    label {
+        margin-left: 8px; /* Adjust if needed */
+        text-align: right;
+    }
+
+    .show-more-button {
+        margin-left: 2em;
+        font-size: 1em;
+    }
+    </style>
+
+    <link rel="stylesheet" href="~/css/search.css" />
+</head>
+
+<body>
+    <div style="margin-top: 5em;">
+        <a href="Index">Home</a>
+    </div>
+    <h1> [ Work In Progress ] </h1>
+    <h2 style="color: white;"> This is proof of concept of developing a search feature</h2>
+    <div id="master-container">
+        <div id="filter-container">
+            <h1 style="color:black;">Filter Container</h1>
+            <button onclick="getCategories()">Populate Filters</button>
+        </div>
+        <div id="search-and-results-column">
+            <div id="search-container" class="flex-row">
+                <input id="search" type="text" placeholder="Search Container" />
+                <button>Search</button>
+            </div>
+            <div id="pager" style="margin-top: 5px; margin-bottom: -75px; font-size: 1em;">
+                <button><<</button><button><</button><button>1</button><button>2</button><button>3</button><button>4</button><button>5</button><button>></button><button>>></button>
+            </div>
+            <div id="results-container">
+                <h2 style="text-align: center;">Results Container</h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+@* TODO: Turn this into a standard function instead of in-lining it anonymously *@
+<script>
+    function getCategories() {
+        fetch('Search?handler=GetCategories')
+            .then(response => response.json())
+            .then(data => {
+                populateCategories(data);
+            })
+            .catch(error => console.error('Error:', error));
+    }
+
+    function populateCategories(data) {
+        const container = document.getElementById('filter-container');
+        container.innerHTML = ''; // Clear existing content
+
+        for (const [filter, subFilters] of Object.entries(data)) {
+            // Create a div for each filter
+            const filterDiv = document.createElement('div');
+            filterDiv.className = 'filter';
+
+            const filterLabel = document.createElement('label');
+            filterLabel.htmlFor = `checkbox-${filter}`;
+            filterLabel.textContent = filter;
+
+            // For main filter checkbox
+            const filterCheckbox = document.createElement('input');
+            filterCheckbox.type = 'checkbox';
+            filterCheckbox.id = `checkbox-${filter}`;
+            filterCheckbox.className = 'main-filter-checkbox';
+
+            filterDiv.appendChild(filterLabel);
+            filterDiv.appendChild(filterCheckbox);
+
+            // Create a list for sub-filters
+            const ul = document.createElement('ul');
+            ul.className = 'sub-filters'; // Add a class for styling or manipulation
+            ul.style.display = 'none'; // Initially hide sub-filters
+            for (const subfilter of subFilters) {
+                const li = document.createElement('li');
+
+                // For sub-filter checkbox
+                const subfilterCheckbox = document.createElement('input');
+                subfilterCheckbox.type = 'checkbox';
+                subfilterCheckbox.id = `checkbox-${subfilter}`;
+                subfilterCheckbox.className = 'sub-filter-checkbox';
+
+                // For sub-filter label
+                const subfilterLabel = document.createElement('label');
+                subfilterLabel.htmlFor = `checkbox-${subfilter}`;
+                subfilterLabel.textContent = subfilter;
+
+                // Event listener for sub-filter checkbox
+                subfilterCheckbox.addEventListener('change', function () {
+                    // Check if at least one sub-filter checkbox is checked
+                    filterCheckbox.checked = Array.from(ul.querySelectorAll('input[type="checkbox"]')).some(cb => cb.checked);
+                });
+
+                li.appendChild(subfilterLabel);
+                li.appendChild(subfilterCheckbox);
+                ul.appendChild(li);
+            }
+            // Event listener for main filter checkbox
+            filterCheckbox.addEventListener('change', function () {
+                // Check/uncheck all sub-filter checkboxes
+                Array.from(ul.querySelectorAll('input[type="checkbox"]')).forEach(cb => cb.checked = filterCheckbox.checked);
+            });
+
+            // Create Show/Hide More button
+            const showMoreButton = document.createElement('button');
+            showMoreButton.textContent = 'Show More';
+            showMoreButton.className = 'show-more-button';
+            showMoreButton.onclick = function () {
+                const isHidden = ul.style.display === 'none';
+                ul.style.display = isHidden ? 'block' : 'none'; // Toggle visibility
+                showMoreButton.textContent = isHidden ? 'Show Less' : 'Show More'; // Toggle button text
+            };
+
+            filterDiv.appendChild(showMoreButton);
+            filterDiv.appendChild(ul);
+
+            // Append the filter div to the container
+            container.appendChild(filterDiv);
+        }
+    }
+</script>

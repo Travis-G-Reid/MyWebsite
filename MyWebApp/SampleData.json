@@ -1,0 +1,30 @@
+{
+    "HouseholdItems": [
+        "Milk",
+        "Eggs",
+        "Bread"
+    ],
+    "CarParts": [
+        "Wheel",
+        "Window",
+        "Door",
+        "Engine"
+    ],
+    "Electronics": [
+        "Laptop",
+        "Smartphone",
+        "Headphones"
+    ],
+    "Clothing": [
+        "Shirt",
+        "Pants",
+        "Jacket",
+        "Shoes"
+    ],
+    "OfficeSupplies": [
+        "Pen",
+        "Notebook",
+        "Stapler",
+        "Printer"
+    ]
+}

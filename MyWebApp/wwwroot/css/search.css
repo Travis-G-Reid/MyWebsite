@@ -1,0 +1,92 @@
+﻿html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+#master-container {
+    width: 125em;
+    height: 100em;
+    display: flex;
+    margin-left: 7em;
+    margin-right: 30em;
+    margin-top: 5em;
+    margin-bottom: 0em;
+    outline-style: groove;
+    outline-color: blue;
+}
+
+#search-and-results-column {
+    margin-top: 10em;
+    margin-bottom: 10em;
+    display: flex;
+    flex-direction: column;
+    outline-style: solid;
+    outline-color: green;
+}
+
+#filter-container {
+    text-align: center;
+    margin-top: 10em;
+    height: 80em;
+    margin-left: 15em;
+    margin-right: 6em;
+    width: 20%;
+    background-color: whitesmoke;
+    outline-style: solid;
+    outline-color: red;
+    outline-style: solid;
+    outline-color: green;
+}
+
+    /* First grandchild */
+    #filter-container > *:first-child > *:first-child {
+        margin-top: 4em;
+    }
+
+#search-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    z-index: 999;
+    align-items: center;
+}
+
+#search {
+    font-size: 2em;
+}
+
+#results-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    outline-style: solid;
+    outline-width: 1px;
+    z-index: 999;
+}
+
+button {
+    min-width: 50px;
+    font-size: 2em;
+    background-color: whitesmoke;
+}
+
+button:hover {
+    background-color: lightgray;
+}
