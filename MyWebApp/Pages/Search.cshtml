@@ -1,60 +1,21 @@
 ﻿@page
+@using MyWebApp.Pages;
 @model SearchModel
 @{
     ViewData["Title"] = "Search";
 }
 
 <head>
-    <style>
-    .filter {
-        margin-bottom: 20px;
-    }
-
-    .filter h3 {
-        font-size: 1.2em;
-        color: navy;
-    }
-
-    .filter ul {
-        list-style-type: none; /* Remove bullet points */
-        padding-left: 0;
-    }
-
-    .filter ul li {
-        padding: 5px 0;
-    }
-
-    .main-filter-checkbox {
-        margin-left: 15px; /* Adjust the margin for main filter checkboxes */
-        vertical-align: middle; /* Align vertically */
-    }
-
-    .sub-filter-checkbox {
-        margin-left: 15px; /* Adjust the margin for sub-filter checkboxes */
-        vertical-align: middle; /* Align vertically */
-    }
-
-    label {
-        margin-left: 8px; /* Adjust if needed */
-        text-align: right;
-    }
-
-    .show-more-button {
-        margin-left: 2em;
-        font-size: 1em;
-    }
-    </style>
-
     <link rel="stylesheet" href="~/css/search.css" />
 </head>
 
 <body>
     <div style="margin-top: 5em;">
-        <a href="Index">Home</a>
+        <a class="navigation-link" href="Index">Home</a>
     </div>
     <h1> [ Work In Progress ] </h1>
-    <h2 style="color: white;"> This is proof of concept of developing a search feature</h2>
-    <div id="master-container">
+    <h2 style="color: white;"> This is proof of concept for a search feature</h2>
+    <div id="master-container" style="background-color: rgba(0, 0, 0, 1) !important;">
         <div id="filter-container">
             <h1 style="color:black;">Filter Container</h1>
             <button onclick="getCategories()">Populate Filters</button>
@@ -62,10 +23,10 @@
         <div id="search-and-results-column">
             <div id="search-container" class="flex-row">
                 <input id="search" type="text" placeholder="Search Container" />
-                <button>Search</button>
+                <button id="search-button">Search</button>
             </div>
-            <div id="pager" style="margin-top: 5px; margin-bottom: -75px; font-size: 1em;">
-                <button><<</button><button><</button><button>1</button><button>2</button><button>3</button><button>4</button><button>5</button><button>></button><button>>></button>
+            <div id="pager">
+                <button class="page-button"><<</button><button class="page-button"><</button><button class="page-button">1</button><button class="page-button">2</button><button class="page-button">3</button><button class="page-button">4</button><button class="page-button">5</button><button class="page-button">></button><button class="page-button">>></button>
             </div>
             <div id="results-container">
                 <h2 style="text-align: center;">Results Container</h2>

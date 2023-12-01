@@ -2,7 +2,7 @@
 @{
     ViewData["Title"] = "Registration";
 }
-<html style="zoom: 1.75; height: 100%; overflow: hidden;">
+<html>
 
 <head>
 	<meta charset="utf-8" />
@@ -12,13 +12,13 @@
 </head>
 
 <body>
-    <div style="margin-top: 10em;">
-        <a class="navigation-link" href="/Index">Home</a>
+    <div style="margin-top: 5em;">
+        <a style="font-size: 2.5em !important;" class="navigation-link" href="/Index">Home</a>
 	    <p style="font-size: 2.5em; color: white;"> Register here! </p>
         <p style="font-size: 1.5em; color: gray;">[ Work in progress ]</p>
     </div>
 
-    <div class="registration-container">
+    <div class="registration-container" style="background-color:rgba(20, 20, 20, 0.99); padding-top: 0.75em;">
 
 	    <form method="post" asp-controller="Register" asp-action="Register">
             <div>

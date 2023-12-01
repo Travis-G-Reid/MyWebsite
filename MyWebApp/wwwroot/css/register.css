@@ -12,5 +12,8 @@
     margin: auto;
 }
 
-.register-button {
+html {
+    height: 100%;
+    overflow: hidden;
+    zoom: 1.75;
 }
