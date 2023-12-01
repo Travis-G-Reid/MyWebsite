@@ -33,19 +33,12 @@
     margin-left: 10.625em;
     margin-right: 10.625em;
     min-width: 40em;
-    /*
-    outline: solid;
-    outline-color: red; This is used for troubleshooting the div borders
-    */
-    background-color: rgba(0, 10, 5, 0.98);
-    box-shadow: 0em 0em 2.1875em rgba(255, 255, 255, 0.98);
+    background-color: rgb(5, 5, 5);
 }
 
 .blog-singleton-container {
     padding-bottom: 2.1875em;
     display: flex-column;
-    background-color: rgba(255, 255, 255, 0.02);
-    padding: 1em
 }
 
 .blog-post-signoff {
