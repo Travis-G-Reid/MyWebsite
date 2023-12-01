@@ -9,7 +9,7 @@ namespace MyWebApp
     {
         public static Dictionary<string, List<string>> GetCategoriesDictionaryFromFile()
         {
-            string jsonFilePath = @".\SampleData.json";
+            string jsonFilePath = @"./wwwroot/data/SampleData.json";
             string jsonString = File.ReadAllText(jsonFilePath);
 
             var categories = JsonSerializer.Deserialize<Categories>(jsonString);
