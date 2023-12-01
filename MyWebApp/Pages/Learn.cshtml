@@ -1,0 +1,227 @@
+﻿@page
+@model MyWebApp.Pages.LearnModel
+@{
+}
+<html>
+	<head>
+		<link rel="stylesheet" href="~/css/learn.css">
+		<link rel="stylesheet" href="~/css/blog.css">
+	</head>
+	<body>
+		<header>
+			<div>
+				<a class="navigation-link" href="Index">Home</a>
+				<br />
+				<br />
+				<h1>Welcome to the learn programming page!</h1>
+			</div>
+		</header>
+
+		<main>
+			<div id="blog-master-container">
+				<div class="blog-singleton-container">
+					<div class="blog-header">The Basic Theory of Computation</div>
+					<div class="blog-text">
+						At the fundamental root of computation, everything is either a
+						function or a variable. In essence, everything in its most atomic
+						form is either data or an operation. Data may contain additional
+						data while operations may be performed on operations. Multiple
+						units of data can be combined into one collection of data, and
+						multiple functions can be combined into one combined function.
+						Because of this, everything may be considered either a variable
+						or a function.
+						<br /> <br />
+						Though it may sound a little obtuse, this is the core fundamental
+						concept behind programming. Many things may be considered data (or 
+						variables, which will be used interchangeably from hereon out).
+						Here are some examples: Time, age, profit, cost, color, location,
+						mouse position, character model, and more.
+					</div>
+
+					<div class="blog-text">
+						Here are some examples of functions in everyday terms:
+						Subtracting cost from revenue, adding fuel to a car,
+						pressing the acceleration pedal of a vehicle, pressing a
+						button on a TV remote, and converting a sequence of radio
+						frequencies into an integer value (potentially to convert
+						said radio frequencies into workable data for the TV).
+						<br /> <br />
+						However, machines cannot read English, thus they must be communcated
+						to in some other format. Machines read a language called Assembly, which
+						is the lowest-level language that exists (that is, the closest to the machine).
+						This language conducts operations by performing extremely simple operations on
+						binary instructions. Binary values may be stored, retrieved, added, subtracted,
+						multiplied, or divided. Additionally, they may conduct logical operations
+						(AND, OR, XOR), and may choose to jump to other parts of a program when specified.
+					</div>
+
+					<div class="blog-text">
+						Here is an example of assembly language:
+						<br /> <br />
+					</div>
+					<div class="image-container">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Motorola_6800_Assembly_Language.png/450px-Motorola_6800_Assembly_Language.png" />
+						<br />
+						Credit to <a href="wikipedia.com">Wikiepdia.com</a>
+					</div>
+
+					<div class="blog-text">
+						Assembly is notoriously difficult to read since it is the first language above
+						pure binary data, and it is Turing-complete (which means that the language is
+						theoretically capable of performing any conceivable program, assuming resources
+						like time and memory are infinite for the sake of the hypothetical). Because of
+						this, the vast majority of programmers do not touch assembly because it is
+						inefficient to write in due to the complexity of developing programs in it.
+						Naturally, programming has evolved from writing in Assembly. About 30 years later,
+						C was developed.
+					</div>
+
+					<div class="blog-text">
+						Let's briefly recall two important concepts:
+						<ol class="blog-ol">
+							<li>If a language is Turing-complete, it can perform and program</li>
+							<li>All programs fundamentally consist of functions and variables which are combinable</li>
+						</ol>
+					</div>
+					<div class="blog-text">
+						So we can logically conclude that assembly, which is a Turing-complete language, may
+						combine its functions into another set of instructions which is also Turing-complete,
+						since any language capable of performing any program can also generate a language that
+						itself is also capable of performing any program. Though you may wonder: Wouldn't the
+						language made up by another language be bulkier or slower since it's composed of another
+						language rather than being its own machine-level coding language? The answer is 'Yes',
+						higher-level programming languages (that is, languages further away from Assembly and
+						composed of increasing levels of other languages) are typically slower, but usually offer
+						a more efficient development experience, usually at the cost of raw execution speed.
+						<br /> <br />
+						Because of this, programming languages may choose to include syntax that allows interaction
+						with lower-level components to increase potential efficiency while retaining higher-level
+						features that may increase development speed. Python, for example, is often considered one
+						of the highest-level programming languages and is widely recognized for its English-sounding
+						syntax, but is often regarded as a very slow language with sometimes difficult-to-maintain
+						codebases due to its built-in adpatability that may encourage poor coding habits. However,
+						it's also one of the biggest data analysis language due to its extensive use of libraries
+						(pre-written code made by other developers intended to serve a specific purpose) use lower-level
+						languages by creating efficient functions in the lower-level language and using them in the
+						higher-level language through a wrapper.
+					</div>
+
+					<div class="blog-text">
+						NumPy, one of the most popular computational libraries in Python, for example, are only
+						written 61% in Python, and the remainder being written 36% in C, 1.6% in C++, and others
+						<a style="font-size: 1em;"href="https://github.com/numpy/numpy">(Numpy Github)</a>. When using
+						libraries like NumPy, it's not uncommon to get within 20% the efficiency of C, but it is
+						important to note that without using lower-level languages or libraries that enable this
+						efficiency, C is about 4500% faster than Python.
+					</div>
+					<div class="blog-text">
+						Therefore, it should be clearly noted: Neither higher-level nor lower-level languages are
+						explicitly better than one another. They are frameworks which are used to specify operations.
+						There is a popular quote that goes: <i>"There are two kinds of languages — Those that are hated,
+						and those that are unused."</i> This rings true as every single language still used today has
+						its own group of critics (with the exception of <i>Rust</i> for reasons anyone familiar with Rust
+						would be willing to rave about). I hestitate to call programming languages tools and urge you to
+						"use the right tool for the job" without specifying the nuance; the analogy of a programming
+						language as a "tool" falls short because you cannot use a hammer to cut wood, nor can you use a
+						crane to make precision cuts in industrial manufacturing. However, since programming languages
+						are Turing-complete by design, any tool can serve the purpose of any other tool, and which language
+						should be used comes down to the language the existing codebase is in, the strengths of the language,
+						and the developer's familiarity with the language.
+					</div>
+
+					<div class="blog-text">
+						After the development and release of C, more programming languages soon began to follow with varying
+						philosophies cited behind their design, some subscribing to a paradigm known as "Functional programming" (FP)
+						wherein functions are treated as mathematical entities where the same input will always have the same output,
+						and functions should <i>never</i> produce unintended side effects.
+						<br /> <br />
+						Its often-cited-as counterpart, "Object-oriented programming" (OOP) focuses on creating custom "objects" (classes)
+						which have developer-defined characteristics and functions of their own. Instead of having a function that
+						performs the (metaphorical) conversion of fuel to mechanical energy, you may instead have an object "FuelConverter"
+						that performs the action "convertFuel()". The benefits of OOP are readability and extensibility, but this can often
+						lead to overly-complex designs where a large network of classes interact with one another in complex and
+						unintuitive ways, ultimately harming readability and maintainability.
+						<br /> <br />
+						Procedural programming is another
+						paradigm, and the last one that will be discussed, that focuses on designing programs with a focus on "procedures"
+						(functions) that operate in sequence to produce the intended result. Essentially, it emphasizes the use of a sequence
+						of functions. Procedural programming is often considered difficult to scale, but easy to produce since it is essentially
+						a series of functions, whereas OOP involves considerable amounts of boilerplate code (repetitive, standard, time-consuming,
+						non-unique code required to set up a program's base functionality or structure), while FP is often considered terse and difficult
+						to read, but this may be due to the fact that most programmers are not very familiar with FP.
+						<br /> <br />
+						Note that many programming languages incorporate elements from multiple paradigms, and the choice of which paradigm to use depends
+						on the language's strengths, the project requirements, and your proficiencies.
+					</div>
+
+					<div class="blog-text">
+						Lastly, specifiying the problem: Since code is essentially a way for humans to translate intent into digital action, the
+						essence of programming is specifying the problem. If you can specify the problem in perfect detail, it is essentially solved.
+						The level of specificity required, though, is often underestimated by those unfamiliar with programming. The phrase "get data",
+						for example, skips so many steps that it's difficult to quantify to a non-technical individual. Who gets the data? What kind of data?
+						What format? From where? What protocol is being used? All of the data? How should it be presented? Does it need to be stored? Cached?
+						Then combine this with a vague few sentences describing an application, such as a website with numerous unique features, and it becomes
+						impossible to determine exactly what the individual meant.
+						<br /> <br />
+						<div style="text-align: left;">This reminds me of a comic:</div>
+					</div>
+					<div class="image-container">
+						<img src="https://img.devrant.com/devrant/rant/r_2143127_iTT73.jpg" />
+						<br />
+						Credit to <a href="commitstrip.com">CommitStrip.com</a>
+					</div>
+
+					<div class="blog-text">
+						The basis of programming ability is a hybrid of programming language proficiency, algorithmic design, pattern recognition, proficiency
+						in frameworks/libraries, and the ability to decompose complex problems into simpler ones. This is called computational thinking, and if
+						a problem can be recursively broken down until it is simple enough to implement in code, then any problem is theoretically solvable given
+						enough time.
+					</div>
+					<div class="image-container">
+						<img src="https://assets-global.website-files.com/61d6943d6b59241863c825d6/62cfafd590bc5b19d1d93e10_CT%20(1).png" />
+						<br />
+						Credit to <a href="kidocode.com/blog/computational-thinking">Kidocode.com</a>
+					</div>
+					<div class="blog-text">
+						Although understanding syntax is certainly important, the skills that underline deep proficiency in a programmer are centered
+						around principles; automating repetitive tasks, recognizing redundant or useless features, and opting for simplicity over complexity.
+						These skills are honed with time, and the best way to get better at programming is to do it. Build a project. You don't need to be
+						capable of finishing the project, and anyone is capable of beginning a project, <b>so begin</b>. The learning process is far more
+						important than completion. You can write 2+2 in the Python console repetitively, but you will not gain nearly as much proficiency
+						as trying to develop your own application but falling short — it is the act of falling short and overcoming the onslaught of problems
+						you are faced with when delving into unknown territory that you learn the most.
+					</div>
+					<br /> <br /> <br />
+					<div style="font-size: 1.3em; text-align: center; font-weight: bold;">
+					Perfect is the enemy of good enough, and good enough is perfect.
+					</div>
+
+					<div style="text-align: left; margin-left: 6em; margin-top: 5em; font-size: 1.3em;">
+					<a href="https://www.programiz.com/python-programming">Learn Python</a>
+					<br /> <br />
+					<a href="https://www.programiz.com/c-programming">Learn C</a>
+					<br /> <br />
+					<a href="https://www.programiz.com/cpp-programming">Learn C++</a>
+					<br /> <br />
+					<a href="https://www.programiz.com/rust/getting-started">Learn Rust</a>
+					<br /> <br />
+					<a href="https://www.programiz.com/java-programming">Learn Java</a>
+					<br /> <br />
+					<a href="https://www.programiz.com/csharp-programming">Learn C#</a>
+					<br /> <br />
+					<a href="https://www.programiz.com/javascript">Learn JavaScript</a>
+					<br /> <br />
+					<a href="https://visualstudio.microsoft.com/vs/community/">Get Visual Studio</a> - Integrated Development Environment
+					<br /> <br />
+					<a href="https://code.visualstudio.com/download">Get Visual Studio Code</a> - Lightweight Code Editor (Yes, the names are confusing)
+					</div>
+
+					
+					<div class="blog-post-signoff">Written by Travis Reid on November 30, 2023</div>
+				</div>
+
+			</div>
+		</main>
+	</body>
+
+</html>

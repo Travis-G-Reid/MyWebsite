@@ -3,6 +3,11 @@
     color: white;
 }
 
+.navigation-link {
+    font-size: 2.5em;
+    background-color: rgba(152, 150, 150, 0.2);
+}
+
 .blog-header {
     margin-left: 2.875em;
     margin-right: 2.875em;
@@ -19,6 +24,7 @@
     margin-top: 1.75em;
     text-align: justify;
     font-size: 1.25em;
+    word-spacing: 0.02em !important;
 }
 
 #blog-master-container {
@@ -46,4 +52,20 @@
     text-align: left;
     margin-top: 10em;
     margin-left: 2em;
+}
+
+.blog-text .blog-ol {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    text-indent: 1em;
+    text-align: left;
+}
+
+a {
+    font-size: 1em;
+}
+
+.image-container {
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
