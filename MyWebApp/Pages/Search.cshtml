@@ -15,10 +15,10 @@
     </div>
     <h1> [ Work In Progress ] </h1>
     <h2 style="color: white;"> This is proof of concept for a search feature</h2>
-    <div id="master-container" style="background-color: rgba(0, 0, 0, 1) !important;">
+    <div id="master-container" style="background-color: rgb(20, 20, 20) !important;">
         <div id="filter-container">
-            <h1 style="color:black;">Filter Container</h1>
-            <button onclick="getCategories()">Populate Filters</button>
+            <h1 style="color:rgb(100, 100, 100);">Filter Container</h1>
+            <button onclick="getCategories()" style="width: 50%; align-self: center;">Populate Filters</button>
         </div>
         <div id="search-and-results-column">
             <div id="search-container" class="flex-row">
@@ -104,12 +104,16 @@
 
             // Create Show/Hide More button
             const showMoreButton = document.createElement('button');
-            showMoreButton.textContent = 'Show More';
+            showMoreButton.textContent = 'v';
             showMoreButton.className = 'show-more-button';
             showMoreButton.onclick = function () {
                 const isHidden = ul.style.display === 'none';
-                ul.style.display = isHidden ? 'block' : 'none'; // Toggle visibility
-                showMoreButton.textContent = isHidden ? 'Show Less' : 'Show More'; // Toggle button text
+                if (isHidden) {
+                    ul.style.display = 'flex'; // Toggle visibility
+                } else {
+                    ul.style.display = 'none';
+                }
+                showMoreButton.textContent = isHidden ? '^' : 'v'; // Toggle button text
             };
 
             filterDiv.appendChild(showMoreButton);

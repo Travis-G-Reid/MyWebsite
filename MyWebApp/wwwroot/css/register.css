@@ -1,19 +1,12 @@
-﻿.form-class {
-    color:white;
-    width: 6.25em;
-    text-align: center;
-}
-
-.registration-container {
+﻿.registration-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 12.5em; /* This seems like nonsensically functionally relevant */
+    width: 15em;
     margin: auto;
 }
 
 html {
     height: 100%;
     overflow: hidden;
-    zoom: 1.75;
 }

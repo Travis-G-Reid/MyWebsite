@@ -1,6 +1,4 @@
 html {
-    background-image: url('https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif');
-    background-size: cover;
     height: 100vh;
     padding: 0;
     margin: 0;
@@ -10,8 +8,8 @@ html {
 }
 
 body {
-    background-size: cover;
-    background-image: inherit;
+    background-color: rgb(6, 6, 6);
+    background-image: url('~/img/backgroundposter.png');
 }
 
 h1 {
@@ -21,4 +19,15 @@ h1 {
 .navigation-link {
     font-size: 2.5em;
     background-color: rgba(152, 150, 150, 0.2);
+}
+
+#background-video {
+    position: fixed; /* Fixed position to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Width equal to 100% of the viewport width */
+    height: 100vh; /* Height equal to 100% of the viewport height */
+    z-index: -1000; /* Place it behind everything else in the document */
+    object-fit: cover; /* Ensure video covers the entire element box */
+    overflow: hidden; /* Hide the overflow */
 }

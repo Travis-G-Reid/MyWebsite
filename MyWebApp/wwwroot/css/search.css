@@ -46,15 +46,11 @@ body {
     height: 80em;
     margin-left: 5em;
     margin-right: 6em;
-    background-color: whitesmoke;
+    background-color: rgb(2 4 5);
     outline-style: solid;
     outline-color: red;
     outline-style: solid;
     outline-color: green;
-}
-
-#filter-container > *:first-child > *:first-child {
-    margin-top: 4em;
 }
 
 #search-container {
@@ -67,6 +63,8 @@ body {
 
 #search {
     font-size: 2em;
+    background-color: rgb(2 4 5);
+    color: white;
 }
 
 #results-container {
@@ -75,7 +73,7 @@ body {
     margin-top: 5em;
     margin-left: auto;
     margin-right: auto;
-    background-color: whitesmoke;
+    background-color: rgb(2 4 5);
     outline-style: solid;
     outline-width: 1px;
     z-index: 999;
@@ -84,7 +82,7 @@ body {
 .page-button {
     min-width: 50px;
     font-size: 2em;
-    background-color: whitesmoke;
+    background-color: rgb(100, 99, 100);
 }
 
 #pager {
@@ -95,15 +93,26 @@ body {
 
 #search-button {
     font-size: 2em;
+    background-color: rgb(2 4 5);
+    color: rgb(116, 116, 116);
+}
+
+#search-button:hover {
+    background-color: rgb(100, 99, 100);
+    color: rgb(2, 4, 5)
 }
 
 button:hover {
-    background-color: lightgray;
+    background-color: white;
 }
 
 .filter {
     margin-bottom: 20px;
     width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    width: 70%;
 }
 
 .filter h3 {
@@ -113,11 +122,17 @@ button:hover {
 
 .filter ul {
     list-style-type: none; /* Remove bullet points */
-    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
 }
 
-.filter ul li {
-    padding: 5px 0;
+li {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 40%;
 }
 
 .main-filter-checkbox {
@@ -133,9 +148,14 @@ button:hover {
 label {
     margin-left: 8px; /* Adjust if needed */
     text-align: right;
+    color: rgb(255, 255, 255)
 }
 
 .show-more-button {
     margin-left: 2em;
     font-size: 1em;
+    background-color: rgb(100, 100, 100);
+}
+
+.sub-filters {
 }

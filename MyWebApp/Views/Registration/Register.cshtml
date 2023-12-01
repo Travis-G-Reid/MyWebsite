@@ -2,8 +2,9 @@
 @{
     ViewData["Title"] = "Registration";
 }
-<html>
 
+<!DOCTYPE html>
+<html>
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,31 +13,38 @@
 </head>
 
 <body>
+    <header>
+        <video id="background-video" preload="auto" autoplay loop muted>
+            <source src="~/vid/BackgroundVideo.mp4" />
+        </video>
+    </header>
     <div style="margin-top: 5em;">
-        <a style="font-size: 1.5em !important;"class="navigation-link" href="/Index">Home</a>
+        <a class="navigation-link" href="/Index">Home</a>
 	    <p style="font-size: 2.5em; color: white;"> Register here! </p>
         <p style="font-size: 1.5em; color: gray;">[ Work in progress ]</p>
     </div>
 
-    <div class="registration-container" style="background-color:rgba(20, 20, 20, 0.99); padding-top: 0.75em;">
+    <div class="registration-container"
+    style="background-color:rgba(20, 20, 20, 0.99); padding-top: 0.75em; font-size: 2em;
+    padding-left: 1em;">
 
-	    <form method="post" asp-controller="Register" asp-action="Register">
+	    <form method="post" asp-controller="Register" asp-action="Register" style="display:flex; flex-direction: column; align-items:flex-end;">
             <div>
                 <label for="username" class="form-class">Username:</label>
-                <input type="text" id="username" name="Username" required>
+                <input type="text" id="username" name="Username" required style="font-size:0.6em;">
             </div>
             <br />
             <div>
                 <label for="password" class="form-class">Password:</label>
-                <input type="password" id="password" name="Password" required>
+                <input type="password" id="password" name="Password" required style="font-size:0.6em;">
             </div>
             <br />
             <div>
                 <label for="email" class="form-class">Email:</label>
-                <input type="email" id="email" name="Email" required>
+                <input type="email" id="email" name="Email" required style="font-size:0.6em;">
             </div>
             <br />
-            <input class="register-button" type="submit" value="Submit">
+            <input class="register-button" type="submit" value="Submit" style="margin-right: 3em; font-size: 0.9em; margin-bottom: 1em;">
         </form>
     </div>
 </body>
