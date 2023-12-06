@@ -154,7 +154,9 @@
     }
 
     header .link-container a {
-        margin-left: 1em;
+        margin-left: 3%;
+        margin-right: 3%;
+        font-size: 65%;
     }
 
     footer {
