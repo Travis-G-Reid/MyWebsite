@@ -7,22 +7,37 @@
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Travis Reid's website" />
     <meta property="og:url" content="https://travis-reid.com" />
+    <title>@ViewData["Title"]</title>
 
-    <title>@ViewData["Title"] - Travis Reid</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/MyWebApp.styles.css" asp-append-version="true" />
 </head>
+
 <body>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <script defer src="~/lib/jquery/dist/jquery.min.js"></script>
+    <header>
+        <div class="link-container">
+            <a href="Blog">Blog</a>
+            <a asp-controller="Registration" asp-action="Register">Make Account</a>
+            <a href="Crypto">Cryptographic Challenge</a>
+            <a href="Search">Search</a>
+            <a href="Learn">Learn Programming</a>
+        </div>
+    </header>
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+        <footer>
+            <div class="link-container">
+                <a href="Blog">Blog</a>
+                <a asp-controller="Registration" asp-action="Register">Make Account</a>
+                <a href="Crypto">Cryptographic Challenge</a>
+                <a href="Search">Search</a>
+                <a href="Learn">Learn Programming</a>
+            </div>
+        </footer>
     <script defer src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script defer src="~/lib/jquery/dist/jquery.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

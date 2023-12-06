@@ -51,6 +51,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\js\" />
+    <Folder Include="wwwroot\vid\" />
   </ItemGroup>
 
 </Project>

@@ -23,5 +23,56 @@ a {
 body {
     background-image: url(/img/red-geometric.jpg);
     background-size: cover;
-    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    margin-bottom: 5em;
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5em;
+}
+
+header .link-container {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: blue;
+}
+
+header .link-container a {
+    margin-left: 1em;
+}
+
+footer {
+    margin-top: 5em;
+    margin-bottom: 0;
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5em;
+}
+
+footer .link-container {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: blue;
+}
+
+footer .link-container a {
+    margin-left: 1em;
+}
+
+main {
+    min-height: 87.5vh;
 }

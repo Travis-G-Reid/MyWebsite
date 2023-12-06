@@ -1,7 +1,7 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Lobby";
+    ViewData["Title"] = "Home";
 }
 <html>
 
@@ -16,18 +16,15 @@
     <link rel="stylesheet" href="~/css/site.css">
 </head>
 
-<body class="main-body">
-<h2>Welcome to my site</h2>
-<a href="Blog">Blog</a>
-<br /> <br /> <br /> <br />
-<a asp-controller="Registration" asp-action="Register">Make Account</a>
-<br /> <br /> <br /> <br />
-<a href="Crypto">Cryptographic Challenge</a>
-<br /> <br /> <br /> <br />
-<a href="Search">Search</a>
-<br /> <br /> <br /> <br />
-<a href="Learn">Learn Programming</a>
-        <p > Made by Travis Reid</p >
+<body>
+    <main>
+        <h2>Welcome to my site</h2>
+        <a href="Blog">Blog</a>
+        <a asp-controller="Registration" asp-action="Register">Make Account</a>
+        <a href="Crypto">Cryptographic Challenge</a>
+        <a href="Search">Search</a>
+        <a href="Learn">Learn Programming</a>
+    </main>
 </body>
 
 </html>
