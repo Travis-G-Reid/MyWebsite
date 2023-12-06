@@ -17,10 +17,11 @@ a {
     text-decoration: none;
     padding-bottom: 3px;
     border-bottom: 1px solid blue;
+    color: blue;
 }
 
 body {
     background-image: url(/img/red-geometric.jpg);
     background-size: cover;
-    margin-top: 15em;
+    margin-top: 10em;
 }
