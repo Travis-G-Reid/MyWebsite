@@ -7,6 +7,11 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+h2 {
+    color:ghostwhite;
+    margin-bottom: 3em;
+}
+
 a {
     font-size: 1.5em;
     text-decoration: none;
@@ -15,11 +20,7 @@ a {
 }
 
 body {
-    background-image: url('~/img/red-geometric.jpg');
+    background-image: url(/img/red-geometric.jpg);
     background-size: cover;
+    margin-top: 15em;
 }
-
-h1 {
-    color: white;
-}
-
