@@ -7,6 +7,13 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    font-size: 1.5em;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 1px solid blue;
+}
+
 body {
     background-color: rgb(6, 6, 6);
     background-image: url('~/img/backgroundposter.png');
@@ -14,11 +21,6 @@ body {
 
 h1 {
     color: white;
-}
-
-.navigation-link {
-    font-size: 3.5em;
-    background-color: rgba(152, 150, 150, 0.8);
 }
 
 #background-video {
