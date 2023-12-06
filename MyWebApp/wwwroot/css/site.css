@@ -58,6 +58,7 @@
     footer {
         margin-top: 5em;
         margin-bottom: 0;
+        padding-bottom: 5%;
         background-color: rgb(20, 20, 20);
         width: 100%;
         display: flex;
@@ -67,7 +68,7 @@
     }
 
     footer .link-container {
-        margin-top: 1em;
+        margin-top: 0.5%;
         display: flex;
         flex-direction: row;
         align-items: center;
