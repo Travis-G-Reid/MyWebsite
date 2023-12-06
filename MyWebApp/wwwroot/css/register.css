@@ -4,6 +4,10 @@
     align-items: flex-start;
     width: 15em;
     margin: auto;
+    background-color: rgb(20, 20, 20);
+    padding-top: 0.75em;
+    font-size: 2em;
+    padding-left: 1em;
 }
 
 html {
