@@ -1,5 +1,4 @@
 ﻿body {
-    margin-top: 9.375em;
     color: white;
 }
 
@@ -13,21 +12,22 @@
 }
 
 .blog-text {
-    text-indent: 1.5em;
+    text-indent: 3em;
     margin-left: 4.5em;
     margin-right: 4.5em;
     margin-top: 1.75em;
     text-align: justify;
-    font-size: 1.25em;
+    font-size: 1.75em;
     word-spacing: 0.02em !important;
 }
 
 #blog-master-container {
     display: flex;
     flex-direction: column-reverse;
-    margin-left: 10.625em;
-    margin-right: 10.625em;
-    min-width: 40em;
+    margin-left: 30%;
+    margin-right: 30%;
+    min-width: 50em;
+    max-width: 175em;
     background-color: rgb(30, 30, 30);
 }
 
@@ -39,7 +39,7 @@
 .blog-post-signoff {
     text-align: left;
     margin-top: 10em;
-    margin-left: 2em;
+    margin-left: 5em;
 }
 
 .blog-text .blog-ol {

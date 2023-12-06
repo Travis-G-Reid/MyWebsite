@@ -1,6 +1,7 @@
 ﻿@model MyWebApp.Models.RegisterModel
 @{
     ViewData["Title"] = "Registration";
+    Layout = "_Layout";
 }
 
 <!DOCTYPE html>
@@ -13,30 +14,33 @@
 </head>
 
 <body>
-    <a href="/Index">Home</a>
+    <main>
+    <div class="flex-column">
+    <div class="WIP">[ Work in progress ]</div>
 	<h2>Register here!</h2>
-    <h2>[ Work in progress ]</h2>
+    
+        <div id="registration-container">
+	        <form id="register-form" method="post" asp-controller="Register" asp-action="Register">
+                <div class="form-group">
+                    <label for="username" class="form-class">Username:</label>
+                    <input type="text" id="username" name="Username" required autocomplete="off" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-class">Password:</label>
+                    <input type="password" id="password" name="Password" required autocomplete="off" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-class">Email:</label>
+                    <input type="email" id="email" name="Email" required autocomplete="off" placeholder="example@gmail.com" />
+                </div>
+                <div>
+                    <input class="register-button" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
 
-    <div class="registration-container">
-	    <form method="post" asp-controller="Register" asp-action="Register" style="display:flex; flex-direction: column; align-items:flex-end;">
-            <div>
-                <label for="username" class="form-class">Username:</label>
-                <input type="text" id="username" name="Username" required style="font-size:0.6em;">
-            </div>
-            <br />
-            <div>
-                <label for="password" class="form-class">Password:</label>
-                <input type="password" id="password" name="Password" required style="font-size:0.6em;">
-            </div>
-            <br />
-            <div>
-                <label for="email" class="form-class">Email:</label>
-                <input type="email" id="email" name="Email" required style="font-size:0.6em;">
-            </div>
-            <br />
-            <input class="register-button" type="submit" value="Submit" style="margin-right: 3em; font-size: 0.9em; margin-bottom: 1em;">
-        </form>
     </div>
+    </main>
 </body>
 
 </html>

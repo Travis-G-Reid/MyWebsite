@@ -14,16 +14,37 @@
     <meta property="og:url" content="https://travis-reid.com" />
 
     <link rel="stylesheet" href="~/css/site.css">
+    <link rel="stylesheet" href="~/css/home.css">
 </head>
 
 <body>
     <main>
-        <h2>Welcome to my site</h2>
-        <a href="Blog">Blog</a>
-        <a asp-controller="Registration" asp-action="Register">Make Account</a>
-        <a href="Crypto">Cryptographic Challenge</a>
-        <a href="Search">Search</a>
-        <a href="Learn">Learn Programming</a>
+    <div class="flex-column">
+        <div class="text-container break-container">
+            <h3>Welcome to my site!</h3>
+        </div>
+        <div class="text-container pad-me">
+            <p>
+                This is a personal project intended to develop
+                my skills in fullstack web development and the
+                use of AWS utilities to host and manage deployments
+                of new versions of my web app.
+            </p>
+            <p>Here are some AWS utilities I'm using:</p>
+            <ul>
+                <li>Route 53 (Managing my domain)</li>
+                <li>Elastic Beanstalk (Deploying code)</li>
+                <li>IAM (Identity Access Management)</li>
+                <li>S3 (Basic logging)</li>
+                <li>RDS (Relational Database Service)</li>
+            </ul>
+            <p class="gap-above">
+                This website is still a work in progress, but I'm
+                doing my best to improve it every day and use it
+                as an avenue for continuous learning.
+            </p>
+        </div>
+    </div>
     </main>
 </body>
 
