@@ -79,7 +79,7 @@
     }
 
     main {
-        min-height: 77vh !important;
+        min-height: 74vh !important;
     }
 
     .flex-column {
@@ -88,9 +88,9 @@
     }
 
     .centered {
-        width: 30%;
-        margin-left: 20%;
-        margin-right: 20%;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 50%;
     }
 
     .dark-background {
