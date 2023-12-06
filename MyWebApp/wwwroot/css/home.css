@@ -49,3 +49,57 @@ ul {
 .break-container {
     margin-bottom: 3em;
 }
+
+@media screen and (max-width: 800px) {
+    body {
+        overflow: scroll !important;
+    }
+    
+    p {
+        font-size: 1em;
+        align-self: center;
+    }
+    
+    .text-container {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        align-items: center;
+        color: ghostwhite;
+        background-color: rgb(30, 30, 30);
+    }
+    
+    .text-container > p {
+        text-align: left;
+        justify-self: auto;
+        text-indent: 2em;
+        margin-bottom: 2em;
+    }
+    
+    .text-container > h3 {
+        text-align: center;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    
+    li {
+        font-size: 1em;
+        list-style-position: inside;
+        align-items: start;
+    }
+    
+    ul {
+        list-style-position: inside;
+        text-align: left;
+        margin-left: 1em;
+        margin-bottom: 3em;
+    }
+    
+    .pad-me {
+        padding: 3em;
+    }
+    
+    .break-container {
+        margin-bottom: 2em;
+    }
+}

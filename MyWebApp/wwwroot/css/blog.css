@@ -1,55 +1,113 @@
-﻿body {
-    color: white;
+﻿@media screen and (min-width: 800px) {
+    body {
+        color: white;
+    }
+
+    .blog-header {
+        margin-left: 2.875em;
+        margin-right: 2.875em;
+        margin-bottom: 3em;
+        padding-top: 2.375em;
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    .blog-text {
+        text-indent: 3em;
+        margin-left: 4.5em;
+        margin-right: 4.5em;
+        margin-top: 1.75em;
+        text-align: justify;
+        font-size: 1.75em;
+        word-spacing: 0.02em !important;
+    }
+
+    #blog-master-container {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 30%;
+        margin-right: 30%;
+        min-width: 50em;
+        max-width: 175em;
+        background-color: rgb(30, 30, 30);
+    }
+
+    .blog-singleton-container {
+        padding-bottom: 2.1875em;
+        display: flex-column;
+    }
+
+    .blog-post-signoff {
+        text-align: left;
+        margin-top: 10em;
+        margin-left: 5em;
+    }
+
+    .blog-text .blog-ol {
+        margin-top: 3em;
+        margin-bottom: 3em;
+        text-indent: 1em;
+        text-align: left;
+    }
+
+    .image-container {
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
 }
 
-.blog-header {
-    margin-left: 2.875em;
-    margin-right: 2.875em;
-    margin-bottom: 3em;
-    padding-top: 2.375em;
-    text-align: center;
-    font-size: 2.5em;
-}
+@media screen and (max-width: 800px) {
+    body {
+        color: white;
+    }
 
-.blog-text {
-    text-indent: 3em;
-    margin-left: 4.5em;
-    margin-right: 4.5em;
-    margin-top: 1.75em;
-    text-align: justify;
-    font-size: 1.75em;
-    word-spacing: 0.02em !important;
-}
+    .blog-header {
+        margin-bottom: 25%;
+        padding: 0%;
+        text-align: center;
+        font-size: 150%;
+    }
 
-#blog-master-container {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-left: 30%;
-    margin-right: 30%;
-    min-width: 50em;
-    max-width: 175em;
-    background-color: rgb(30, 30, 30);
-}
+    .blog-text {
+        text-indent: 2em;
+        margin-bottom: 15%;
+        margin-top: 15%;
+        padding: 0%;
+        text-align: justify;
+        font-size: 100%;
+    }
 
-.blog-singleton-container {
-    padding-bottom: 2.1875em;
-    display: flex-column;
-}
+    #blog-master-container {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 80%;
+        margin: 10%;
+        background-color: rgb(30, 30, 30);
+    }
 
-.blog-post-signoff {
-    text-align: left;
-    margin-top: 10em;
-    margin-left: 5em;
-}
+    .blog-singleton-container {
+        max-width: inherit;
+        width: inherit;
+        margin: inherit;
+        display: flex-column;
+    }
 
-.blog-text .blog-ol {
-    margin-top: 3em;
-    margin-bottom: 3em;
-    text-indent: 1em;
-    text-align: left;
-}
+    .blog-post-signoff {
+        text-align: left;
+        margin-top: 50%;
+        font-size: 80%;
+    }
 
-.image-container {
-    margin-top: 3em;
-    margin-bottom: 3em;
+    .blog-text .blog-ol {
+        margin: 0%;
+        text-indent: 1em;
+        text-align: left;
+    }
+
+    .image-container {
+        /* This should use parent flex container to align-left
+            then scale relative to master container width*/
+        transform:scale(0.45);
+        margin-left: -45%;
+    }
 }

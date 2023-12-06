@@ -1,43 +1,94 @@
-﻿body {
-    overflow: hidden !important;
+﻿@media screen and (min-width: 800px) {
+    body {
+        overflow: hidden !important;
+    }
+
+    #registration-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30%;
+        margin-right: 30%;
+        min-width: 25em;
+        color: ghostwhite;
+        background-color: rgb(20, 20, 20);
+        font-size: 2em;
+    }
+
+    .register-button {
+        font-size: 0.9em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 5em;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1em;
+        align-self: center;
+        justify-self: center;
+    }
+
+    #register-form {
+        display: flex;
+        flex-direction: column;
+        vertical-align: auto;
+    }
+
+    label {
+        width: 5em;
+    }
+
+    input {
+        width: 13em;
+    }
 }
 
-#registration-container {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30%;
-    margin-right: 30%;
-    min-width: 25em;
-    color: ghostwhite;
-    background-color: rgb(20, 20, 20);
-    font-size: 2em;
-}
+@media screen and (max-width: 800px) {
+    body {
+        overflow: scroll !important;
+    }
 
-.register-button {
-    font-size: 0.9em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    width: 5em;
-}
+    #registration-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-right: 5%;
+        width: 80%;
+        color: ghostwhite;
+        background-color: rgb(20, 20, 20);
+        font-size: 100%;
+    }
 
-.form-group {
-    display: flex;
-    flex-direction: row;
-    margin-top: 1em;
-    align-self: center;
-    justify-self: center;
-}
+    .register-button {
+        font-size: 0.9em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 5em;
+    }
 
-#register-form {
-    display: flex;
-    flex-direction: column;
-    vertical-align:auto;
-}
+    .form-group {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 1em;
+        align-self: center;
+        justify-self: center;
+    }
 
-label {
-    width: 5em;
-}
+    #register-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        vertical-align: auto;
+    }
 
-input {
-    width: 13em;
+    label {
+        width: 70%;
+    }
+
+    input {
+        width: 100%;
+    }
 }
