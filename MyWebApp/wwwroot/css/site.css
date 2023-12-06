@@ -15,21 +15,11 @@ a {
 }
 
 body {
-    background-color: rgb(6, 6, 6);
-    background-image: url('~/img/backgroundposter.png');
+    background-image: url('~/img/red-geometric.jpg');
+    background-size: cover;
 }
 
 h1 {
     color: white;
 }
 
-#background-video {
-    position: fixed; /* Fixed position to cover the entire viewport */
-    top: 0;
-    left: 0;
-    width: 100vw; /* Width equal to 100% of the viewport width */
-    height: 100vh; /* Height equal to 100% of the viewport height */
-    z-index: -1000; /* Place it behind everything else in the document */
-    object-fit: cover; /* Ensure video covers the entire element box */
-    overflow: hidden; /* Hide the overflow */
-}
