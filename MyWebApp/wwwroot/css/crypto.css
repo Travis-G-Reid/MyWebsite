@@ -1,7 +1,6 @@
 ﻿@media screen and (min-width: 800px) {
     body {
         color: ghostwhite;
-        overflow: hidden !important;
     }
 
     .master-container {
@@ -34,7 +33,6 @@
 @media screen and (max-width: 800px) {
     body {
         color: ghostwhite;
-        overflow: hidden !important;
     }
 
     .master-container {

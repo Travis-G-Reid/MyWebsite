@@ -25,10 +25,10 @@
     #blog-master-container {
         display: flex;
         flex-direction: column-reverse;
-        margin-left: 30%;
-        margin-right: 30%;
-        min-width: 50em;
-        max-width: 175em;
+        margin-left: 20%;
+        margin-right: 20%;
+        min-width: 30%;
+        max-width: 80%;
         background-color: rgb(30, 30, 30);
     }
 

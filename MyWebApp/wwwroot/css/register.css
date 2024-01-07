@@ -1,6 +1,5 @@
 ﻿@media screen and (min-width: 800px) {
     body {
-        overflow: hidden !important;
     }
 
     #registration-container {
@@ -46,7 +45,6 @@
 
 @media screen and (max-width: 800px) {
     body {
-        overflow: scroll !important;
     }
 
     #registration-container {

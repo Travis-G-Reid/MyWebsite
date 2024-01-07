@@ -23,18 +23,16 @@
             <a href="/Learn">Learn Programming</a>
         </div>
     </header>
-    <main role="main" class="pb-3">
+    <main role="main" class="pb-3 main-container">
         @RenderBody()
     </main>
-        <footer>
-            <div class="link-container">
-                <a href="/Index">Home</a>
-                <a href="/Blog">Blog</a>
-                <a asp-controller="Registration" asp-action="Register">Make an Account</a>
-                <a href="/Crypto">Cryptographic Challenge</a>
-                <a href="/Learn">Learn Programming</a>
-            </div>
-        </footer>
+    <footer>
+        <div class="link-container">
+            <p>Travis Reid</p>
+            <p>Travisreid0901@gmail.com</p>
+            <p>(217) 240-2460</p>
+        </div>
+    </footer>
     <script defer src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script defer src="~/lib/jquery/dist/jquery.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)

@@ -1,6 +1,9 @@
+.main-container {
+    flex: 1;
+}
+
 @media screen and (min-width: 800px) {
     html {
-        height: 100vh;
         padding: 0;
         margin: 0;
         color: white;
@@ -28,6 +31,11 @@
     }
 
     body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
         background-image: url(/img/red-geometric.jpg);
         background-size: cover;
     }
@@ -56,27 +64,29 @@
     }
 
     footer {
-        margin-top: 5em;
+        position: inherit;
+        margin-top: 3%;
         margin-bottom: 0;
-        padding-bottom: 5%;
+        padding-bottom: 0%;
         background-color: rgb(20, 20, 20);
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 5em;
+        height: 5%;
     }
 
     footer .link-container {
-        margin-top: 0.5%;
+        margin-top: 1%;
         display: flex;
         flex-direction: row;
         align-items: center;
-        color: blue;
     }
 
-    footer .link-container a {
+    footer .link-container * {
         margin-left: 1em;
+        font-size: 1em;
+        color: darkgray;
     }
 
     main {
@@ -136,8 +146,8 @@
 
     header {
         margin-top: 0;
-        margin-bottom: 15%;
-        padding-bottom: 5%;
+        margin-bottom: 10%;
+        padding-bottom: 3%;
         background-color: rgb(20, 20, 20);
         width: 100%;
         display: flex;
@@ -146,7 +156,6 @@
     }
 
     header .link-container {
-        margin-top: 1em;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -154,32 +163,38 @@
     }
 
     header .link-container a {
-        margin-left: 3%;
-        margin-right: 3%;
-        font-size: 65%;
+        margin-top: 5%;
+        margin-left: 0;
+        margin-right: 5%;
+        font-size: 85%;
     }
 
     footer {
-        margin-top: 15%;
+        position: inherit;
+        margin-top: 3%;
         margin-bottom: 0;
+        padding-bottom: 0%;
         background-color: rgb(20, 20, 20);
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 15%;
+        height: 5%;
+
     }
 
     footer .link-container {
-        margin-top: 1em;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        color: blue;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     }
 
-    footer .link-container a {
+    footer .link-container * {
         margin-left: 1em;
+        margin-top: 2%;
+        font-size: 70%;
+        color: darkgray;
     }
 
     .flex-column {
@@ -199,9 +214,5 @@
 
     main {
         min-height: 100% !important;
-    }
-
-    footer {
-        display: none !important;
     }
 }

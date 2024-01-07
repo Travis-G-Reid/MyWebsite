@@ -1,5 +1,4 @@
 ﻿body {
-    overflow: hidden !important;
 }
 
 p {
@@ -52,7 +51,6 @@ ul {
 
 @media screen and (max-width: 800px) {
     body {
-        overflow: scroll !important;
     }
     
     p {
